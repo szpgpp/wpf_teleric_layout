@@ -25,3 +25,4 @@ E:\VS Forms\Wpf_teleric_layout\Wpf_teleric_layout\Wpf_teleric_layout2\obj\x86\De
 E:\VS Forms\Wpf_teleric_layout\Wpf_teleric_layout\Wpf_teleric_layout2\obj\x86\Debug\Wpf_teleric_layout2.csproj.GenerateResource.Cache
 E:\VS Forms\Wpf_teleric_layout\Wpf_teleric_layout\Wpf_teleric_layout2\obj\x86\Debug\Wpf_teleric_layout2.exe
 E:\VS Forms\Wpf_teleric_layout\Wpf_teleric_layout\Wpf_teleric_layout2\obj\x86\Debug\Wpf_teleric_layout2.pdb
+E:\VS Forms\Wpf_teleric_layout\Wpf_teleric_layout\Wpf_teleric_layout2\obj\x86\Debug\Wpf_teleric_layout2.csprojResolveAssemblyReference.cache

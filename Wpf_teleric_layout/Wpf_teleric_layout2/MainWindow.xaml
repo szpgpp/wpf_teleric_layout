@@ -21,25 +21,38 @@
 									Margin="0 0 0 10"
 									BorderThickness="0"
 									Padding="0">
-
-
-            <telerik:RadSplitContainer Background="White" Width="300" Height="300" telerik:RadDocking.DockState="DockedBottom">
-                
+            <telerik:RadDocking.DocumentHost>
+            <telerik:RadSplitContainer Background="White" telerik:RadDocking.DockState="DockedBottom">
+                    <telerik:RadPaneGroup>
+                        <telerik:RadPane Header="page1"></telerik:RadPane>
+                        <telerik:RadPane Header="page1"></telerik:RadPane>
+                    </telerik:RadPaneGroup>
             </telerik:RadSplitContainer>
-            <telerik:RadSplitContainer Background="Red"
-                                       Width="300" Height="300" telerik:RadDocking.DockState="DockedTop">
-
+            </telerik:RadDocking.DocumentHost>
+            <telerik:RadSplitContainer Background="Red" Width="100" telerik:RadDocking.DockState="DockedLeft">
+                <telerik:RadPaneGroup>
+                    <telerik:RadPane CanUserClose="True" CanDockInDocumentHost="False" CanFloat="False" Header="page1"></telerik:RadPane>
+                    <telerik:RadPane Header="page1"></telerik:RadPane>
+                </telerik:RadPaneGroup>
             </telerik:RadSplitContainer>
-            <telerik:RadSplitContainer Background="Blue" Width="300" Height="300" telerik:RadDocking.DockState="DockedLeft">
-
+            <telerik:RadSplitContainer Background="Blue" Width="100" telerik:RadDocking.DockState="DockedRight">
+                <telerik:RadPaneGroup>
+                    <telerik:RadPane Header="page1"></telerik:RadPane>
+                    <telerik:RadPane Header="page1"></telerik:RadPane>
+                </telerik:RadPaneGroup>
             </telerik:RadSplitContainer>
-            <telerik:RadSplitContainer Background="Yellow" Width="300" Height="300" telerik:RadDocking.DockState="DockedRight">
-
+            <telerik:RadSplitContainer Background="yellow" Height="100" telerik:RadDocking.DockState="DockedBottom">
+                <telerik:RadPaneGroup>
+                    <telerik:RadPane Header="page1"></telerik:RadPane>
+                    <telerik:RadPane Header="page1"></telerik:RadPane>
+                </telerik:RadPaneGroup>
             </telerik:RadSplitContainer>
-            <telerik:RadSplitContainer Background="Gray" Width="300" Height="300">
-
+            <telerik:RadSplitContainer Background="Gray" Height="100" telerik:RadDocking.DockState="DockedTop">
+                <telerik:RadPaneGroup>
+                    <telerik:RadPane Header="page1"></telerik:RadPane>
+                    <telerik:RadPane Header="page1"></telerik:RadPane>
+                </telerik:RadPaneGroup>
             </telerik:RadSplitContainer>
-
         </telerik:RadDocking>
     </Grid>
 </Window>
