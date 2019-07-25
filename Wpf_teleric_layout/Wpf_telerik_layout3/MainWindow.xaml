@@ -1,0 +1,58 @@
+﻿<Window
+                xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+                xmlns:Primitives="clr-namespace:Telerik.Windows.Controls.Diagrams.Primitives;assembly=Telerik.Windows.Controls.Diagrams" x:Class="Wpf_telerik_layout3.MainWindow"
+                Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid x:Name="diagramRootPanel">
+            <Grid.Resources>
+                <telerik:HierarchicalGalleryItemsCollection x:Key="ToolboxSource"/>
+                <DataTemplate x:Key="ToolboxItemTemplate">
+                    <Border Height="100" Margin="0,1,1,0" Width="76">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Viewbox HorizontalAlignment="Center" Height="50" Margin="5,10,5,0" Stretch="Uniform" VerticalAlignment="Top" Width="64">
+                                <ContentControl Content="{Binding Shape}" HorizontalContentAlignment="Center" IsHitTestVisible="False" Margin="15" VerticalAlignment="Top" VerticalContentAlignment="Center"/>
+                            </Viewbox>
+                            <TextBlock FontFamily="Segoe UI Semibold" HorizontalAlignment="Center" Margin="0,0,0,5" Padding="4,0" Grid.Row="1" TextAlignment="Center" TextWrapping="Wrap" Text="{Binding Header}"/>
+                        </Grid>
+                    </Border>
+                </DataTemplate>
+                <HierarchicalDataTemplate x:Key="ToolboxTemplate" ItemTemplate="{StaticResource ToolboxItemTemplate}" ItemsSource="{Binding Items}">
+                    <StackPanel>
+                        <TextBlock Text="{Binding Header}"/>
+                    </StackPanel>                        
+                </HierarchicalDataTemplate>
+            </Grid.Resources>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Grid x:Name="diagramHostPanel" Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="200"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <telerik:RadDiagram x:Name="diagram" SelectionMode="Extended" Grid.Column="1" Grid.Row="1">
+                    <Primitives:ItemInformationAdorner.AdditionalContent>
+                        <telerik:SettingsPane Diagram="{Binding ElementName=diagram}"/>
+                    </Primitives:ItemInformationAdorner.AdditionalContent>
+                </telerik:RadDiagram>
+                <telerik:RadDiagramThumbnail Diagram="{Binding ElementName=diagram}" HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.Column="1" Grid.Row="1"/>
+                <telerik:RadDiagramRuler Diagram="{Binding ElementName=diagram}" Placement="Left" Grid.Row="1"/>
+                <telerik:RadDiagramRuler Grid.Column="1" Diagram="{Binding ElementName=diagram}" Placement="Top"/>
+            </Grid>
+            <telerik:RadDiagramToolbox Grid.Column="1" Header="{Binding SelectedItem.Header, RelativeSource={RelativeSource Self}}"                                        
+                                       ItemTemplate="{StaticResource ToolboxTemplate}" ItemsSource="{StaticResource ToolboxSource}" Title="Gallery" Width="300" VerticalAlignment="Center"/>
+        </Grid>
+
+    </Grid>
+</Window>

@@ -1,0 +1,42 @@
+F:\MyDesktop\db360898-61ca-4674-93d2-a07cbb34d31e_DiagramToolBox\DiagramToolBox\bin\Debug\DiagramToolBox.exe.config
+F:\MyDesktop\db360898-61ca-4674-93d2-a07cbb34d31e_DiagramToolBox\DiagramToolBox\bin\Debug\DiagramToolBox.exe
+F:\MyDesktop\db360898-61ca-4674-93d2-a07cbb34d31e_DiagramToolBox\DiagramToolBox\bin\Debug\DiagramToolBox.pdb
+F:\MyDesktop\db360898-61ca-4674-93d2-a07cbb34d31e_DiagramToolBox\DiagramToolBox\bin\Debug\Telerik.Windows.Controls.Diagrams.dll
+F:\MyDesktop\db360898-61ca-4674-93d2-a07cbb34d31e_DiagramToolBox\DiagramToolBox\bin\Debug\Telerik.Windows.Controls.Diagrams.Extensions.dll
+F:\MyDesktop\db360898-61ca-4674-93d2-a07cbb34d31e_DiagramToolBox\DiagramToolBox\bin\Debug\Telerik.Windows.Controls.dll
+F:\MyDesktop\db360898-61ca-4674-93d2-a07cbb34d31e_DiagramToolBox\DiagramToolBox\bin\Debug\Telerik.Windows.Controls.Input.dll
+F:\MyDesktop\db360898-61ca-4674-93d2-a07cbb34d31e_DiagramToolBox\DiagramToolBox\bin\Debug\Telerik.Windows.Controls.Navigation.dll
+F:\MyDesktop\db360898-61ca-4674-93d2-a07cbb34d31e_DiagramToolBox\DiagramToolBox\bin\Debug\Telerik.Windows.Data.dll
+F:\MyDesktop\db360898-61ca-4674-93d2-a07cbb34d31e_DiagramToolBox\DiagramToolBox\bin\Debug\Telerik.Windows.Diagrams.Core.dll
+F:\MyDesktop\db360898-61ca-4674-93d2-a07cbb34d31e_DiagramToolBox\DiagramToolBox\bin\Debug\Telerik.Windows.Controls.xml
+F:\MyDesktop\db360898-61ca-4674-93d2-a07cbb34d31e_DiagramToolBox\DiagramToolBox\bin\Debug\Telerik.Windows.Controls.Diagrams.xml
+F:\MyDesktop\db360898-61ca-4674-93d2-a07cbb34d31e_DiagramToolBox\DiagramToolBox\bin\Debug\Telerik.Windows.Controls.Diagrams.Extensions.xml
+F:\MyDesktop\db360898-61ca-4674-93d2-a07cbb34d31e_DiagramToolBox\DiagramToolBox\bin\Debug\Telerik.Windows.Controls.Input.xml
+F:\MyDesktop\db360898-61ca-4674-93d2-a07cbb34d31e_DiagramToolBox\DiagramToolBox\bin\Debug\Telerik.Windows.Controls.Navigation.xml
+F:\MyDesktop\db360898-61ca-4674-93d2-a07cbb34d31e_DiagramToolBox\DiagramToolBox\bin\Debug\Telerik.Windows.Data.xml
+F:\MyDesktop\db360898-61ca-4674-93d2-a07cbb34d31e_DiagramToolBox\DiagramToolBox\bin\Debug\Telerik.Windows.Diagrams.Core.xml
+F:\MyDesktop\db360898-61ca-4674-93d2-a07cbb34d31e_DiagramToolBox\DiagramToolBox\bin\Debug\de\Telerik.Windows.Controls.resources.dll
+F:\MyDesktop\db360898-61ca-4674-93d2-a07cbb34d31e_DiagramToolBox\DiagramToolBox\bin\Debug\es\Telerik.Windows.Controls.resources.dll
+F:\MyDesktop\db360898-61ca-4674-93d2-a07cbb34d31e_DiagramToolBox\DiagramToolBox\bin\Debug\fr\Telerik.Windows.Controls.resources.dll
+F:\MyDesktop\db360898-61ca-4674-93d2-a07cbb34d31e_DiagramToolBox\DiagramToolBox\bin\Debug\it\Telerik.Windows.Controls.resources.dll
+F:\MyDesktop\db360898-61ca-4674-93d2-a07cbb34d31e_DiagramToolBox\DiagramToolBox\bin\Debug\nl\Telerik.Windows.Controls.resources.dll
+F:\MyDesktop\db360898-61ca-4674-93d2-a07cbb34d31e_DiagramToolBox\DiagramToolBox\bin\Debug\tr\Telerik.Windows.Controls.resources.dll
+F:\MyDesktop\db360898-61ca-4674-93d2-a07cbb34d31e_DiagramToolBox\DiagramToolBox\obj\Debug\MyToolBoxStyle.baml
+F:\MyDesktop\db360898-61ca-4674-93d2-a07cbb34d31e_DiagramToolBox\DiagramToolBox\obj\Debug\App.baml
+F:\MyDesktop\db360898-61ca-4674-93d2-a07cbb34d31e_DiagramToolBox\DiagramToolBox\obj\Debug\MainWindow.g.cs
+F:\MyDesktop\db360898-61ca-4674-93d2-a07cbb34d31e_DiagramToolBox\DiagramToolBox\obj\Debug\App.g.cs
+F:\MyDesktop\db360898-61ca-4674-93d2-a07cbb34d31e_DiagramToolBox\DiagramToolBox\obj\Debug\GeneratedInternalTypeHelper.g.cs
+F:\MyDesktop\db360898-61ca-4674-93d2-a07cbb34d31e_DiagramToolBox\DiagramToolBox\obj\Debug\DiagramToolBox_MarkupCompile.cache
+F:\MyDesktop\db360898-61ca-4674-93d2-a07cbb34d31e_DiagramToolBox\DiagramToolBox\obj\Debug\DiagramToolBox_MarkupCompile.lref
+F:\MyDesktop\db360898-61ca-4674-93d2-a07cbb34d31e_DiagramToolBox\DiagramToolBox\obj\Debug\MainWindow.baml
+F:\MyDesktop\db360898-61ca-4674-93d2-a07cbb34d31e_DiagramToolBox\DiagramToolBox\obj\Debug\DiagramToolBox.g.resources
+F:\MyDesktop\db360898-61ca-4674-93d2-a07cbb34d31e_DiagramToolBox\DiagramToolBox\obj\Debug\DiagramToolBox.Properties.Resources.resources
+F:\MyDesktop\db360898-61ca-4674-93d2-a07cbb34d31e_DiagramToolBox\DiagramToolBox\obj\Debug\DiagramToolBox.csproj.GenerateResource.Cache
+F:\MyDesktop\db360898-61ca-4674-93d2-a07cbb34d31e_DiagramToolBox\DiagramToolBox\obj\Debug\DiagramToolBox.exe
+F:\MyDesktop\db360898-61ca-4674-93d2-a07cbb34d31e_DiagramToolBox\DiagramToolBox\obj\Debug\DiagramToolBox.pdb
+F:\MyDesktop\db360898-61ca-4674-93d2-a07cbb34d31e_DiagramToolBox\DiagramToolBox\obj\Debug\DiagramToolBox.csprojResolveAssemblyReference.cache
+F:\MyDesktop\db360898-61ca-4674-93d2-a07cbb34d31e_DiagramToolBox\DiagramToolBox\obj\Debug\MyToolBoxStyle1.baml
+F:\MyDesktop\db360898-61ca-4674-93d2-a07cbb34d31e_DiagramToolBox\DiagramToolBox\obj\Debug\MyToolBoxStyle2.baml
+E:\VS Forms\Wpf_teleric_layout\Wpf_teleric_layout\DiagramToolBox\bin\Debug\DiagramToolBox.exe.config
+E:\VS Forms\Wpf_teleric_layout\Wpf_teleric_layout\DiagramToolBox\obj\Debug\DiagramToolBox.exe
+E:\VS Forms\Wpf_teleric_layout\Wpf_teleric_layout\DiagramToolBox\obj\Debug\DiagramToolBox.pdb

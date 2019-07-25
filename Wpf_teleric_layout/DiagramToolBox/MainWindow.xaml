@@ -1,0 +1,38 @@
+﻿<Window x:Class="DiagramToolBox.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" 
+        xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+        xmlns:local="clr-namespace:DiagramToolBox" >
+    <Grid>
+        <Grid.DataContext>
+            <local:MainViewModel />
+        </Grid.DataContext>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <Grid.Resources>
+            <ResourceDictionary Source="/DiagramToolBox;component/MyToolBoxStyle.xaml"/>
+        </Grid.Resources>      
+
+        <telerik:RadDiagramToolbox x:Name="toolbox" Grid.Row="0"  
+                               Title="Gallery"                                                            
+                               HorizontalAlignment="Stretch"
+                               Header="{Binding SelectedItem.Header,
+                                                RelativeSource={RelativeSource Self}}"
+                               ItemsSource="{Binding Items}"
+                               ItemTemplate="{StaticResource ToolboxGroupTemplate}"
+                               Visibility="{Binding IsChecked,
+                                                    ElementName=toolboxButton,
+                                                    Converter={StaticResource BooleanToVisibilityConverter}}" 
+                               />
+
+        <StackPanel Grid.Row="1" Name="xsp" Width="auto" Height="50" Background="Red"></StackPanel>
+        <telerik:RadDiagram x:Name="diagram" Grid.Row="2" MinWidth="500" />
+
+    </Grid>
+</Window>

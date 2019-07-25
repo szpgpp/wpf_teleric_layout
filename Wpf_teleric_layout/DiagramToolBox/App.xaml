@@ -1,0 +1,16 @@
+﻿<Application x:Class="DiagramToolBox.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="C:/Program Files (x86)/Progress/Telerik UI for WPF R3 2018/Themes.Implicit/WPF40/Windows8/Themes/System.Windows.xaml"/>
+                <ResourceDictionary Source="C:/Program Files (x86)/Progress/Telerik UI for WPF R3 2018/Themes.Implicit/WPF40/Windows8/Themes/Telerik.Windows.Controls.xaml"/>
+                <ResourceDictionary Source="C:/Program Files (x86)/Progress/Telerik UI for WPF R3 2018/Themes.Implicit/WPF40/Windows8/Themes/Telerik.Windows.Controls.Navigation.xaml"/>
+                <ResourceDictionary Source="C:/Program Files (x86)/Progress/Telerik UI for WPF R3 2018/Themes.Implicit/WPF40/Windows8/Themes/Telerik.Windows.Controls.Diagrams.xaml"/>
+                <ResourceDictionary Source="C:/Program Files (x86)/Progress/Telerik UI for WPF R3 2018/Themes.Implicit/WPF40/Windows8/Themes/Telerik.Windows.Controls.Diagrams.Extensions.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
