@@ -27,6 +27,7 @@ namespace DiagramToolBox
         
     public class MainViewModel
     {
+        public static String Columns = "5";
         public ObservableCollection<MyGallery> Items { get; set; }
         public MainViewModel()
         {

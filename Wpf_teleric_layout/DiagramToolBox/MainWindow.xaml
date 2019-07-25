@@ -8,16 +8,16 @@
         <Grid.DataContext>
             <local:MainViewModel />
         </Grid.DataContext>
-        
+
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        
+
         <Grid.Resources>
             <ResourceDictionary Source="/DiagramToolBox;component/MyToolBoxStyle.xaml"/>
-        </Grid.Resources>      
+        </Grid.Resources>
 
         <telerik:RadDiagramToolbox x:Name="toolbox" Grid.Row="0"  
                                Title="Gallery"                                                            
@@ -31,7 +31,9 @@
                                                     Converter={StaticResource BooleanToVisibilityConverter}}" 
                                />
 
-        <StackPanel Grid.Row="1" Name="xsp" Width="auto" Height="50" Background="Red"></StackPanel>
+        <StackPanel Grid.Row="1" Name="xsp" Width="auto" Background="Red" Height="40" VerticalAlignment="Top">
+            <Button x:Name="button" Width="100" Height="40" Content="Button" Click="button_Click"/>
+        </StackPanel>
         <telerik:RadDiagram x:Name="diagram" Grid.Row="2" MinWidth="500" />
 
     </Grid>
