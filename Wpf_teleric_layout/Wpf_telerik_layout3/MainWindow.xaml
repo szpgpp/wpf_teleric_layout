@@ -30,7 +30,8 @@
             </Grid.Resources>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="600
+                                  "/>
             </Grid.ColumnDefinitions>
             <Grid x:Name="diagramHostPanel" Grid.Column="0">
                 <Grid.RowDefinitions>

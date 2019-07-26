@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,13 +16,26 @@ namespace DiagramToolBox
         public string Header { get; set; }
     }
     
-    public class MyGallery
+    public class MyGallery : INotifyPropertyChanged
     {
         public string Header { get; set; }
         public ObservableCollection<MyShape> Shapes { get; set; }
         public MyGallery()
         {
             this.Shapes = new ObservableCollection<MyShape>();
+        }
+        private string __Columns = "3";
+        public string Columns { get { return this.__Columns; } set { this.__Columns = value; this.RaisePropertyChanged("Columns"); } }
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        private void RaisePropertyChanged(string propertyName)
+        {
+            //得到一个副本以预防线程问题
+            PropertyChangedEventHandler handler = PropertyChanged;
+            if (handler != null)
+            {
+                handler(this, new PropertyChangedEventArgs(propertyName));
+            }
         }
     }
         
@@ -33,7 +47,7 @@ namespace DiagramToolBox
         {
             this.Items = new ObservableCollection<MyGallery>();
             //create and populate the first custom gallery
-            MyGallery firstGallery = new MyGallery { Header = "First Gallery" };
+            MyGallery firstGallery = new MyGallery { Header = "First Gallery",Columns="4" };
             firstGallery.Shapes.Add(new MyShape
             {
                 Header = "Shape 1.1",
@@ -62,7 +76,7 @@ namespace DiagramToolBox
             this.Items.Add(firstGallery);
 
             //create and populate the second custom gallery
-            MyGallery secondGallery = new MyGallery { Header = "Second Gallery" };
+            MyGallery secondGallery = new MyGallery { Header = "Second Gallery",Columns="2" };
             secondGallery.Shapes.Add(new MyShape
             {
                 Header = "Shape 2.1",
