@@ -4,6 +4,28 @@
                 xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
 		        xmlns:System="clr-namespace:System;assembly=mscorlib" xmlns:Chromes="clr-namespace:Telerik.Windows.Controls.Chromes;assembly=Telerik.Windows.Controls" xmlns:Primitives="clr-namespace:Telerik.Windows.Controls.Primitives;assembly=Telerik.Windows.Controls.Navigation" x:Class="Wpf_teleric_layout2.MainWindow"
                 Title="MainWindow" Height="350" Width="525">
+    <Window.Resources>
+        <telerik:HierarchicalGalleryItemsCollection x:Key="ToolboxSource"/>
+        <DataTemplate x:Key="ToolboxItemTemplate">
+            <Border Height="100" Margin="0,1,1,0" Width="76">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Viewbox HorizontalAlignment="Center" Height="50" Margin="5,10,5,0" Stretch="Uniform" VerticalAlignment="Top" Width="64">
+                        <ContentControl Content="{Binding Shape}" HorizontalContentAlignment="Center" IsHitTestVisible="False" Margin="15" VerticalAlignment="Top" VerticalContentAlignment="Center"/>
+                    </Viewbox>
+                    <TextBlock FontFamily="Segoe UI Semibold" HorizontalAlignment="Center" Margin="0,0,0,5" Padding="4,0" Grid.Row="1" TextAlignment="Center" TextWrapping="Wrap" Text="{Binding Header}"/>
+                </Grid>
+            </Border>
+        </DataTemplate>
+        <HierarchicalDataTemplate x:Key="ToolboxTemplate" ItemTemplate="{StaticResource ToolboxItemTemplate}" ItemsSource="{Binding Items}">
+            <StackPanel>
+                <TextBlock Text="{Binding Header}"/>
+            </StackPanel>
+        </HierarchicalDataTemplate>
+    </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
@@ -22,32 +44,56 @@
 									BorderThickness="0"
 									Padding="0">
             <telerik:RadDocking.DocumentHost>
-            <telerik:RadSplitContainer Background="White" telerik:RadDocking.DockState="DockedBottom">
+            <telerik:RadSplitContainer telerik:RadDocking.DockState="DockedBottom">
                     <telerik:RadPaneGroup>
-                        <telerik:RadPane Header="page1"></telerik:RadPane>
-                        <telerik:RadPane Header="page1"></telerik:RadPane>
+                        <telerik:RadPane CanUserClose="False"  CanDockInDocumentHost="False" CanFloat="False" Header="Canvas" >
+                            <Grid x:Name="diagramRootPanel">
+                                <Grid x:Name="diagramHostPanel">
+                                    <telerik:RadDiagram x:Name="diagram"/>
+                                </Grid>
+                            </Grid>
+                        </telerik:RadPane>
                     </telerik:RadPaneGroup>
-            </telerik:RadSplitContainer>
+                </telerik:RadSplitContainer>
             </telerik:RadDocking.DocumentHost>
-            <telerik:RadSplitContainer Background="Red" Width="100" telerik:RadDocking.DockState="DockedLeft">
+            <telerik:RadSplitContainer Width="300" telerik:RadDocking.DockState="DockedLeft">
                 <telerik:RadPaneGroup>
-                    <telerik:RadPane CanUserClose="True" CanDockInDocumentHost="False" CanFloat="False" Header="page1"></telerik:RadPane>
+                    <telerik:RadPane CanUserClose="True" CanDockInDocumentHost="False" CanFloat="False" Header="LeftTree">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <Grid.Resources>
+                                <ResourceDictionary Source="/Wpf_teleric_layout2;component/MyToolBoxStyle.xaml"/>
+                            </Grid.Resources>
+                            <telerik:RadDiagramToolbox x:Name="toolbox" Grid.Row="0"  
+                               Title="Gallery"                                                            
+                               HorizontalAlignment="Stretch"
+                               Header="{Binding SelectedItem.Header,
+                                                RelativeSource={RelativeSource Self}}" 
+                               ItemsSource="{Binding Items}"
+                               ItemTemplate="{StaticResource ToolboxGroupTemplate}"
+                               />
+                            <!--telerik:RadDiagramToolbox Grid.Row="0" Header="{Binding SelectedItem.Header, RelativeSource={RelativeSource Self}}"                                        
+                                ItemTemplate="{StaticResource ToolboxTemplate}" ItemsSource="{StaticResource ToolboxSource}" Title="Gallery" Width="300" VerticalAlignment="Center"/-->
+                        </Grid>
+                    </telerik:RadPane>
+                </telerik:RadPaneGroup>
+            </telerik:RadSplitContainer>
+            <telerik:RadSplitContainer Width="100" telerik:RadDocking.DockState="DockedRight">
+                <telerik:RadPaneGroup>
+                    <telerik:RadPane Header="page1"></telerik:RadPane>
                     <telerik:RadPane Header="page1"></telerik:RadPane>
                 </telerik:RadPaneGroup>
             </telerik:RadSplitContainer>
-            <telerik:RadSplitContainer Background="Blue" Width="100" telerik:RadDocking.DockState="DockedRight">
+            <telerik:RadSplitContainer Height="100" telerik:RadDocking.DockState="DockedBottom">
                 <telerik:RadPaneGroup>
                     <telerik:RadPane Header="page1"></telerik:RadPane>
                     <telerik:RadPane Header="page1"></telerik:RadPane>
                 </telerik:RadPaneGroup>
             </telerik:RadSplitContainer>
-            <telerik:RadSplitContainer Background="yellow" Height="100" telerik:RadDocking.DockState="DockedBottom">
-                <telerik:RadPaneGroup>
-                    <telerik:RadPane Header="page1"></telerik:RadPane>
-                    <telerik:RadPane Header="page1"></telerik:RadPane>
-                </telerik:RadPaneGroup>
-            </telerik:RadSplitContainer>
-            <telerik:RadSplitContainer Background="Gray" Height="100" telerik:RadDocking.DockState="DockedTop">
+            <telerik:RadSplitContainer Height="100" telerik:RadDocking.DockState="DockedTop">
                 <telerik:RadPaneGroup>
                     <telerik:RadPane Header="page1"></telerik:RadPane>
                     <telerik:RadPane Header="page1"></telerik:RadPane>

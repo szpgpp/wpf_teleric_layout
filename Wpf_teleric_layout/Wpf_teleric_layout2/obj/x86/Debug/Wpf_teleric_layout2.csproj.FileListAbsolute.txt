@@ -25,4 +25,17 @@ E:\VS Forms\Wpf_teleric_layout\Wpf_teleric_layout\Wpf_teleric_layout2\obj\x86\De
 E:\VS Forms\Wpf_teleric_layout\Wpf_teleric_layout\Wpf_teleric_layout2\obj\x86\Debug\Wpf_teleric_layout2.csproj.GenerateResource.Cache
 E:\VS Forms\Wpf_teleric_layout\Wpf_teleric_layout\Wpf_teleric_layout2\obj\x86\Debug\Wpf_teleric_layout2.exe
 E:\VS Forms\Wpf_teleric_layout\Wpf_teleric_layout\Wpf_teleric_layout2\obj\x86\Debug\Wpf_teleric_layout2.pdb
+E:\VS Forms\Wpf_teleric_layout\Wpf_teleric_layout\Wpf_teleric_layout2\bin\Debug\Telerik.Windows.Controls.Diagrams.dll
+E:\VS Forms\Wpf_teleric_layout\Wpf_teleric_layout\Wpf_teleric_layout2\bin\Debug\Telerik.Windows.Diagrams.Core.dll
+E:\VS Forms\Wpf_teleric_layout\Wpf_teleric_layout\Wpf_teleric_layout2\bin\Debug\Telerik.Windows.Controls.Diagrams.xml
+E:\VS Forms\Wpf_teleric_layout\Wpf_teleric_layout\Wpf_teleric_layout2\bin\Debug\Telerik.Windows.Diagrams.Core.xml
+E:\VS Forms\Wpf_teleric_layout\Wpf_teleric_layout\Wpf_teleric_layout2\bin\Debug\Telerik.Windows.Controls.Diagrams.Extensions.dll
+E:\VS Forms\Wpf_teleric_layout\Wpf_teleric_layout\Wpf_teleric_layout2\bin\Debug\Telerik.Windows.Controls.Input.dll
+E:\VS Forms\Wpf_teleric_layout\Wpf_teleric_layout\Wpf_teleric_layout2\bin\Debug\Telerik.Windows.Controls.Diagrams.Extensions.xml
+E:\VS Forms\Wpf_teleric_layout\Wpf_teleric_layout\Wpf_teleric_layout2\bin\Debug\Telerik.Windows.Controls.Input.xml
+E:\VS Forms\Wpf_teleric_layout\Wpf_teleric_layout\Wpf_teleric_layout2\obj\x86\Debug\Wpf_teleric_layout2.exe.licenses
+E:\VS Forms\Wpf_teleric_layout\Wpf_teleric_layout\Wpf_teleric_layout2\obj\x86\Debug\BATDiagramToolBox.g.cs
+E:\VS Forms\Wpf_teleric_layout\Wpf_teleric_layout\Wpf_teleric_layout2\obj\x86\Debug\Wpf_teleric_layout2_MarkupCompile.lref
+E:\VS Forms\Wpf_teleric_layout\Wpf_teleric_layout\Wpf_teleric_layout2\obj\x86\Debug\BATDiagramToolBox.baml
+E:\VS Forms\Wpf_teleric_layout\Wpf_teleric_layout\Wpf_teleric_layout2\obj\x86\Debug\MyToolBoxStyle.baml
 E:\VS Forms\Wpf_teleric_layout\Wpf_teleric_layout\Wpf_teleric_layout2\obj\x86\Debug\Wpf_teleric_layout2.csprojResolveAssemblyReference.cache

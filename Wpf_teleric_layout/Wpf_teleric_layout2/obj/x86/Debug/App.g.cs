@@ -33,6 +33,8 @@ using Telerik.Windows.Controls;
 using Telerik.Windows.Controls.Animation;
 using Telerik.Windows.Controls.Behaviors;
 using Telerik.Windows.Controls.Carousel;
+using Telerik.Windows.Controls.Diagrams;
+using Telerik.Windows.Controls.Diagrams.Extensions;
 using Telerik.Windows.Controls.Docking;
 using Telerik.Windows.Controls.DragDrop;
 using Telerik.Windows.Controls.LayoutControl;
