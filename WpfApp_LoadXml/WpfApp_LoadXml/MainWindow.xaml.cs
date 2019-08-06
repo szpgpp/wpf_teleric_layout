@@ -87,7 +87,9 @@ namespace WpfApp_LoadXml
 
         private void Button_Click_4(object sender, RoutedEventArgs e)
         {
-            (this.RTV1.DataContext as XmlDataProvider).Document = xml2;
+            new Thread(() => {
+                this.RTV1.Dispatcher.Invoke(() => { (this.RTV1.DataContext as XmlDataProvider).Document = xml2; });
+            }).Start();
         }
 
         private void Button_Click_5(object sender, RoutedEventArgs e)
@@ -104,8 +106,13 @@ namespace WpfApp_LoadXml
 
         private void Button_Click_6(object sender, RoutedEventArgs e)
         {
-            xml2.RemoveAll();
-            xml2 = null;
+            new Thread(() => {
+                this.RTV1.Dispatcher.Invoke(() =>
+                {
+                    xml2.RemoveAll();
+                    xml2 = null;
+                });
+            }).Start();
         }
     }
 }
