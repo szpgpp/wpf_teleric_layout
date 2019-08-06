@@ -25,6 +25,8 @@ namespace WpfApp_LoadXml
         public MainWindow()
         {
             InitializeComponent();
+
+            this.RTV1.DataContext = new XmlDataProvider();
         }
         XmlDocument xml1 = null;
         XmlDocument xml2 = null;
@@ -36,10 +38,10 @@ namespace WpfApp_LoadXml
         XmlDocument xml8 = null;
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            var release = true;
+            var release = false;
             var button1 = sender as Button;
             var index = Convert.ToInt32(button1.Tag);
-            var path = @"E:\VS Forms\Wpf_teleric_layout_data\car.xml";
+            var path = @"E:\VS Forms\Wpf_teleric_layout_data\project.xml";
 
             new Thread(() =>
             {
@@ -62,20 +64,48 @@ namespace WpfApp_LoadXml
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            xml1.DocumentElement.SetAttribute("content", "Root");
-            var xdp = new XmlDataProvider { Document = xml1 };
-            this.RTV1.DataContext = xdp;
+            (this.RTV1.DataContext as XmlDataProvider).Document = xml1;
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            xml1.DocumentElement.SetAttribute("content", "Root1");
+            xml1?.DocumentElement.SetAttribute("content", "Root1");
+            xml2?.DocumentElement.SetAttribute("content", "Root2");
+            xml3?.DocumentElement.SetAttribute("content", "Root3");
+            xml4?.DocumentElement.SetAttribute("content", "Root4");
+            xml5?.DocumentElement.SetAttribute("content", "Root5");
+            xml6?.DocumentElement.SetAttribute("content", "Root6");
+            xml7?.DocumentElement.SetAttribute("content", "Root7");
+            xml8?.DocumentElement.SetAttribute("content", "Root8");
         }
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
             xml1.RemoveAll();
             xml1 = null;
+        }
+
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+            (this.RTV1.DataContext as XmlDataProvider).Document = xml2;
+        }
+
+        private void Button_Click_5(object sender, RoutedEventArgs e)
+        {
+            xml1?.DocumentElement.SetAttribute("content", "Root1");
+            xml2?.DocumentElement.SetAttribute("content", "Root2");
+            xml3?.DocumentElement.SetAttribute("content", "Root3");
+            xml4?.DocumentElement.SetAttribute("content", "Root4");
+            xml5?.DocumentElement.SetAttribute("content", "Root5");
+            xml6?.DocumentElement.SetAttribute("content", "Root6");
+            xml7?.DocumentElement.SetAttribute("content", "Root7");
+            xml8?.DocumentElement.SetAttribute("content", "Root8");
+        }
+
+        private void Button_Click_6(object sender, RoutedEventArgs e)
+        {
+            xml2.RemoveAll();
+            xml2 = null;
         }
     }
 }
