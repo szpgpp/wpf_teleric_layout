@@ -27,3 +27,27 @@ C:\Users\xiaomi\source\repos\WpfApp_LoadXml\WpfApp_LoadXml\bin\Debug\nl\Telerik.
 C:\Users\xiaomi\source\repos\WpfApp_LoadXml\WpfApp_LoadXml\bin\Debug\tr\Telerik.Windows.Controls.resources.dll
 C:\Users\xiaomi\source\repos\WpfApp_LoadXml\WpfApp_LoadXml\obj\Debug\WpfApp_LoadXml.exe.licenses
 C:\Users\xiaomi\source\repos\WpfApp_LoadXml\WpfApp_LoadXml\obj\Debug\WpfApp_LoadXml.csproj.CopyComplete
+E:\VS Forms\Wpf_teleric_layout\WpfApp_LoadXml\WpfApp_LoadXml\bin\Debug\WpfApp_LoadXml.exe.config
+E:\VS Forms\Wpf_teleric_layout\WpfApp_LoadXml\WpfApp_LoadXml\obj\Debug\WpfApp_LoadXml.exe
+E:\VS Forms\Wpf_teleric_layout\WpfApp_LoadXml\WpfApp_LoadXml\obj\Debug\WpfApp_LoadXml.pdb
+E:\VS Forms\Wpf_teleric_layout\WpfApp_LoadXml\WpfApp_LoadXml\obj\Debug\WpfApp_LoadXml.csprojResolveAssemblyReference.cache
+E:\VS Forms\Wpf_teleric_layout\WpfApp_LoadXml\WpfApp_LoadXml\obj\Debug\MainWindow.g.cs
+E:\VS Forms\Wpf_teleric_layout\WpfApp_LoadXml\WpfApp_LoadXml\obj\Debug\App.g.cs
+E:\VS Forms\Wpf_teleric_layout\WpfApp_LoadXml\WpfApp_LoadXml\obj\Debug\WpfApp_LoadXml_MarkupCompile.cache
+E:\VS Forms\Wpf_teleric_layout\WpfApp_LoadXml\WpfApp_LoadXml\obj\Debug\WpfApp_LoadXml_MarkupCompile.lref
+E:\VS Forms\Wpf_teleric_layout\WpfApp_LoadXml\WpfApp_LoadXml\bin\Debug\WpfApp_LoadXml.exe
+E:\VS Forms\Wpf_teleric_layout\WpfApp_LoadXml\WpfApp_LoadXml\bin\Debug\WpfApp_LoadXml.pdb
+E:\VS Forms\Wpf_teleric_layout\WpfApp_LoadXml\WpfApp_LoadXml\bin\Debug\Telerik.Windows.Controls.xml
+E:\VS Forms\Wpf_teleric_layout\WpfApp_LoadXml\WpfApp_LoadXml\bin\Debug\Telerik.Windows.Controls.Navigation.xml
+E:\VS Forms\Wpf_teleric_layout\WpfApp_LoadXml\WpfApp_LoadXml\bin\Debug\Telerik.Windows.Data.xml
+E:\VS Forms\Wpf_teleric_layout\WpfApp_LoadXml\WpfApp_LoadXml\bin\Debug\de\Telerik.Windows.Controls.resources.dll
+E:\VS Forms\Wpf_teleric_layout\WpfApp_LoadXml\WpfApp_LoadXml\bin\Debug\es\Telerik.Windows.Controls.resources.dll
+E:\VS Forms\Wpf_teleric_layout\WpfApp_LoadXml\WpfApp_LoadXml\bin\Debug\fr\Telerik.Windows.Controls.resources.dll
+E:\VS Forms\Wpf_teleric_layout\WpfApp_LoadXml\WpfApp_LoadXml\bin\Debug\it\Telerik.Windows.Controls.resources.dll
+E:\VS Forms\Wpf_teleric_layout\WpfApp_LoadXml\WpfApp_LoadXml\bin\Debug\nl\Telerik.Windows.Controls.resources.dll
+E:\VS Forms\Wpf_teleric_layout\WpfApp_LoadXml\WpfApp_LoadXml\bin\Debug\tr\Telerik.Windows.Controls.resources.dll
+E:\VS Forms\Wpf_teleric_layout\WpfApp_LoadXml\WpfApp_LoadXml\obj\Debug\MainWindow.baml
+E:\VS Forms\Wpf_teleric_layout\WpfApp_LoadXml\WpfApp_LoadXml\obj\Debug\WpfApp_LoadXml.g.resources
+E:\VS Forms\Wpf_teleric_layout\WpfApp_LoadXml\WpfApp_LoadXml\obj\Debug\WpfApp_LoadXml.Properties.Resources.resources
+E:\VS Forms\Wpf_teleric_layout\WpfApp_LoadXml\WpfApp_LoadXml\obj\Debug\WpfApp_LoadXml.csproj.GenerateResource.Cache
+E:\VS Forms\Wpf_teleric_layout\WpfApp_LoadXml\WpfApp_LoadXml\obj\Debug\WpfApp_LoadXml.exe.licenses

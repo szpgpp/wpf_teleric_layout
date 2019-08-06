@@ -39,7 +39,7 @@ namespace WpfApp_LoadXml
             var release = true;
             var button1 = sender as Button;
             var index = Convert.ToInt32(button1.Tag);
-            var path = @"C:\Users\xiaomi\Downloads\trunk\SpecMap\bin\Debug\svntempdir\ROOT_b25ad967-6297-4f04-bca2-0874443088b0\car.xml";
+            var path = @"E:\VS Forms\Wpf_teleric_layout_data\car.xml";
 
             new Thread(() =>
             {
@@ -47,14 +47,14 @@ namespace WpfApp_LoadXml
 
                 switch (index)
                 {
-                    case 1: if (release && xml1 != null) { xml1.RemoveAll(); } xml1 = new XmlDocument(); xml1.Load(path); break;
-                    case 2: if (release && xml2 != null) { xml2.RemoveAll(); } xml2 = new XmlDocument(); xml2.Load(path); break;
-                    case 3: if (release && xml3 != null) { xml3.RemoveAll(); } xml3 = new XmlDocument(); xml3.Load(path); break;
-                    case 4: if (release && xml4 != null) { xml4.RemoveAll(); } xml4 = new XmlDocument(); xml4.Load(path); break;
-                    case 5: if (release && xml5 != null) { xml5.RemoveAll(); } xml5 = new XmlDocument(); xml5.Load(path); break;
-                    case 6: if (release && xml6 != null) { xml6.RemoveAll(); } xml6 = new XmlDocument(); xml6.Load(path); break;
-                    case 7: if (release && xml7 != null) { xml7.RemoveAll(); } xml7 = new XmlDocument(); xml7.Load(path); break;
-                    case 8: if (release && xml8 != null) { xml8.RemoveAll(); } xml8 = new XmlDocument(); xml8.Load(path); break;
+                    case 1: if (release && xml1 != null) { xml1.RemoveAll(); } xml1 = new XmlDocument(); XGC.ClearMemory(); xml1.Load(path); break;
+                    case 2: if (release && xml2 != null) { xml2.RemoveAll(); } xml2 = new XmlDocument(); XGC.ClearMemory(); xml2.Load(path); break;
+                    case 3: if (release && xml3 != null) { xml3.RemoveAll(); } xml3 = new XmlDocument(); XGC.ClearMemory(); xml3.Load(path); break;
+                    case 4: if (release && xml4 != null) { xml4.RemoveAll(); } xml4 = new XmlDocument(); XGC.ClearMemory(); xml4.Load(path); break;
+                    case 5: if (release && xml5 != null) { xml5.RemoveAll(); } xml5 = new XmlDocument(); XGC.ClearMemory(); xml5.Load(path); break;
+                    case 6: if (release && xml6 != null) { xml6.RemoveAll(); } xml6 = new XmlDocument(); XGC.ClearMemory(); xml6.Load(path); break;
+                    case 7: if (release && xml7 != null) { xml7.RemoveAll(); } xml7 = new XmlDocument(); XGC.ClearMemory(); xml7.Load(path); break;
+                    case 8: if (release && xml8 != null) { xml8.RemoveAll(); } xml8 = new XmlDocument(); XGC.ClearMemory(); xml8.Load(path); break;
                 }
                 button1.Dispatcher.Invoke(() => button1.IsEnabled = true);
             }).Start();
